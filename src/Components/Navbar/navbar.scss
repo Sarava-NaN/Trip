@@ -1,0 +1,169 @@
+// Variables;
+$Font__Poppins: "Poppins", sans-serif;
+$PrimaryColor: hsl(26, 93%, 50%);
+$HoverColor: hsl(26, 90%, 42%);
+$WhiteColor: hsl(0, 0%, 100%);
+$BlackColor: hsl(0, 0%, 18%);
+$textColor: hsl(240, 1%, 48%);
+$TWhiteColorDeam: hsl(0, 0%, 93%);
+$greyBg: hsl(0, 0%, 96%);
+$GreyText: rgb(190, 190, 190);
+$InputColor: hsl(330, 12%, 97%);
+
+.navBarSection {
+  .header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    .logoDiv {
+      color: $WhiteColor;
+      font-weight: 500;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+
+      .icon {
+        color: $PrimaryColor;
+        font-size: 25px;
+      }
+      .heading {
+        color: $WhiteColor;
+        gap: 2rem;
+      }
+    }
+    .navBar {
+      width: clamp(600px, 70%, 1000px);
+    }
+    .navLists {
+      justify-content: space-around;
+      .navItem {
+        .navLinks {
+          color: $WhiteColor;
+        }
+      }
+    }
+    .headerBtns {
+      justify-content: space-around;
+      width: 200px;
+      .LoginBtn {
+        background: transparent;
+        border: 2px solid $PrimaryColor;
+        transition: 1s ease-in-out;
+        &:hover {
+          background: $HoverColor;
+
+          a {
+            color: $WhiteColor;
+          }
+        }
+        a {
+          color: $WhiteColor;
+        }
+      }
+    }
+    .closeNavBar {
+      display: none;
+    }
+    .toggleNavBar {
+      display: none;
+    }
+    @media screen and (max-width: 768px) {
+      .navBar {
+        background: $greyBg;
+        position: absolute;
+        height: max-content;
+        padding: 1rem;
+        width: 100%;
+        top: 0%;
+        right: -500%;
+        box-shadow: 0 2px 4px rgb(209, 209, 209, 0.904);
+        transition: 1s ease-in-out;
+        z-index: 1000;
+
+        .navLists {
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          margin: auto;
+
+          .navItem {
+            padding: 1rem 0;
+
+            .navLinks {
+              color: $textColor;
+              font-size: 1rem;
+              font-weight: 600;
+              &:hover {
+                color: $PrimaryColor;
+              }
+            }
+          }
+          .headerBtns {
+            flex-direction: column;
+            .btn {
+              margin-top: 1rem; //On the widesceen margin-left should be 1rem
+              a {
+                font-weight: 600;
+                &:hover {
+                  color: $WhiteColor;
+                }
+              }
+            }
+            .LoginBtn {
+              background: none;
+              border: 1px solid $PrimaryColor;
+              a {
+                color: $PrimaryColor;
+              }
+              &:hover {
+                background: $HoverColor;
+                a {
+                  color: $WhiteColor;
+                }
+              }
+            }
+          }
+        }
+        .closeNavBar {
+          display: block;
+          position: absolute;
+          top: 1rem;
+          right: 1.5rem;
+          color: $PrimaryColor;
+          &:hover {
+            color: $HoverColor;
+          }
+        }
+      }
+      .toggleNavBar {
+        display: block;
+        .icon {
+          font-size: 30px;
+          color: $WhiteColor;
+
+          &:hover {
+            color: $PrimaryColor;
+          }
+        }
+      }
+      .activeNavbar {
+        right: 0;
+      }
+    }
+  }
+  .active__header {
+    background: $textColor;
+    box-shadow: 0 2px 8px 2px rgba(36, 34, 34, 0.795);
+    transition: 0.4s ease-in;
+  }
+}
+
+//  .activeHeader {
+//     background: $PrimaryColor;
+//     box-shadow: 0 2px 8px 2px rgba(36, 34, 34, 0.795);
+//   }
+//

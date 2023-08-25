@@ -1,0 +1,251 @@
+.offer {
+  transform: translateY(-50px);
+}
+.offer .seccontainer {
+  margin: auto;
+  align-items: center;
+  width: fit-content;
+  gap: 2rem;
+}
+.offer .seccontainer .secIntro .h {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 18%);
+}
+.offer .seccontainer .secIntro .p {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: hsl(240, 1%, 48%);
+}
+.offer .seccontainer .maincontent {
+  margin: auto;
+  align-items: center;
+  width: fit-content;
+  gap: 3rem;
+}
+.offer .seccontainer .maincontent .singleOffer {
+  gap: 2rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px 2px rgba(36, 34, 34, 0.795);
+}
+.offer .seccontainer .maincontent .singleOffer .icon {
+  font-size: 20px;
+  color: hsl(240, 1%, 48%);
+}
+.offer .seccontainer .maincontent .singleOffer small {
+  font-weight: 500;
+  color: hsl(240, 1%, 48%);
+}
+.offer .seccontainer .maincontent .singleOffer .destImage {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.offer .seccontainer .maincontent .singleOffer .destImage img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+.offer .seccontainer .maincontent .singleOffer .destImage .discount {
+  background-color: hsl(26, 90%, 42%);
+  padding: 5px 10px;
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.offer .seccontainer .maincontent .singleOffer .destImage .discount:hover {
+  background: hsl(26, 93%, 50%);
+}
+.offer .seccontainer .maincontent .singleOffer .offerboddy {
+  padding: 1rem;
+}
+.offer .seccontainer .maincontent .singleOffer .offerboddy .price {
+  justify-content: space-between;
+}
+.offer .seccontainer .maincontent .singleOffer .offerboddy .price h4 {
+  color: hsl(0, 0%, 18%);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.offer .seccontainer .maincontent .singleOffer .offerboddy .price .status {
+  padding: 5px 10px;
+  color: hsl(26, 90%, 42%);
+  background: rgba(128, 128, 128, 0.527);
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 3rem;
+  transition: 0.8s ease;
+}
+.offer .seccontainer .maincontent .singleOffer .offerboddy .price .status:hover {
+  background: black;
+  color: hsl(26, 93%, 50%);
+}
+.offer .seccontainer .maincontent .singleOffer .offerboddy .amentities {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+.offer .seccontainer .maincontent .singleOffer .offerboddy .amentities .singleAmentity {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgba(128, 128, 128, 0.527);
+  gap: 0.5rem;
+}
+.offer .seccontainer .maincontent .singleOffer .offerboddy .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 0.6rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  gap: 0.5rem;
+}
+.offer .seccontainer .maincontent .singleOffer .offerboddy .btn .icon {
+  color: hsl(0, 0%, 100%);
+}
+.offer .seccontainer .maincontent .singleOffer:hover {
+  transform: translateY(-7px);
+}
+
+@media screen and (min-width: 556px) and (max-width: 640px) {
+  .offer {
+    display: grid;
+  }
+  .offer .seccontainer {
+    margin: auto;
+    display: grid;
+    width: fit-content;
+    gap: 2rem;
+  }
+  .offer .seccontainer .maincontent {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .offer img:hover {
+    transform: scale(1.5);
+    transition: 4s ease;
+  }
+  .h {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1000px) {
+  .offer {
+    display: grid;
+  }
+  .offer .seccontainer {
+    margin: auto;
+    display: grid;
+    width: fit-content;
+    gap: 2rem;
+  }
+  .offer .seccontainer .maincontent {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .offer .seccontainer .maincontent .singleOffer .destImage {
+    height: 400px;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  .offer .seccontainer .maincontent .singleOffer .destImage img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .offer .seccontainer .maincontent .singleOffer .destImage img:hover {
+    transform: scale(1.5);
+    transition: 4s ease;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .offer {
+    display: grid;
+  }
+  .offer .seccontainer {
+    margin: auto;
+    align-items: center;
+    width: fit-content;
+    gap: 1rem;
+  }
+  .offer .seccontainer .maincontent {
+    margin: auto;
+    width: fit-content;
+    justify-content: space-between;
+    width: 400px;
+    height: 100%;
+    display: inline-flex;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .offer .seccontainer .maincontent .singleOffer {
+    width: fit-content;
+    height: fit-content;
+    margin: 0.5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    box-shadow: 0 2px 8px 2px rgba(36, 34, 34, 0.795);
+  }
+  .offer .h {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: hsl(0, 0%, 18%);
+  }
+  .offer .p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    color: hsl(240, 1%, 48%);
+  }
+  .offer img:hover {
+    transform: scale(1.5);
+    transition: 4s ease;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 544px) {
+  .offer .seccontainer {
+    margin: auto;
+    display: grid;
+    gap: 2rem;
+  }
+  .offer img:hover {
+    transform: scale(1.3);
+    transition: 4s ease;
+  }
+}/*# sourceMappingURL=offers.css.map */

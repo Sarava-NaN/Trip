@@ -1,0 +1,141 @@
+.navBarSection .header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+}
+.navBarSection .header .logoDiv {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.navBarSection .header .logoDiv .icon {
+  color: hsl(26, 93%, 50%);
+  font-size: 25px;
+}
+.navBarSection .header .logoDiv .heading {
+  color: hsl(0, 0%, 100%);
+  gap: 2rem;
+}
+.navBarSection .header .navBar {
+  width: clamp(600px, 70%, 1000px);
+}
+.navBarSection .header .navLists {
+  justify-content: space-around;
+}
+.navBarSection .header .navLists .navItem .navLinks {
+  color: hsl(0, 0%, 100%);
+}
+.navBarSection .header .headerBtns {
+  justify-content: space-around;
+  width: 200px;
+}
+.navBarSection .header .headerBtns .LoginBtn {
+  background: transparent;
+  border: 2px solid hsl(26, 93%, 50%);
+  transition: 1s ease-in-out;
+}
+.navBarSection .header .headerBtns .LoginBtn:hover {
+  background: hsl(26, 90%, 42%);
+}
+.navBarSection .header .headerBtns .LoginBtn:hover a {
+  color: hsl(0, 0%, 100%);
+}
+.navBarSection .header .headerBtns .LoginBtn a {
+  color: hsl(0, 0%, 100%);
+}
+.navBarSection .header .closeNavBar {
+  display: none;
+}
+.navBarSection .header .toggleNavBar {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navBarSection .header .navBar {
+    background: hsl(0, 0%, 96%);
+    position: absolute;
+    height: max-content;
+    padding: 1rem;
+    width: 100%;
+    top: 0%;
+    right: -500%;
+    box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+    transition: 1s ease-in-out;
+    z-index: 1000;
+  }
+  .navBarSection .header .navBar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .navBarSection .header .navBar .navLists .navItem {
+    padding: 1rem 0;
+  }
+  .navBarSection .header .navBar .navLists .navItem .navLinks {
+    color: hsl(240, 1%, 48%);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .navBarSection .header .navBar .navLists .navItem .navLinks:hover {
+    color: hsl(26, 93%, 50%);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns {
+    flex-direction: column;
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .btn {
+    margin-top: 1rem;
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .btn a {
+    font-weight: 600;
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .btn a:hover {
+    color: hsl(0, 0%, 100%);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .LoginBtn {
+    background: none;
+    border: 1px solid hsl(26, 93%, 50%);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .LoginBtn a {
+    color: hsl(26, 93%, 50%);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .LoginBtn:hover {
+    background: hsl(26, 90%, 42%);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .LoginBtn:hover a {
+    color: hsl(0, 0%, 100%);
+  }
+  .navBarSection .header .navBar .closeNavBar {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: hsl(26, 93%, 50%);
+  }
+  .navBarSection .header .navBar .closeNavBar:hover {
+    color: hsl(26, 90%, 42%);
+  }
+  .navBarSection .header .toggleNavBar {
+    display: block;
+  }
+  .navBarSection .header .toggleNavBar .icon {
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+  }
+  .navBarSection .header .toggleNavBar .icon:hover {
+    color: hsl(26, 93%, 50%);
+  }
+  .navBarSection .header .activeNavbar {
+    right: 0;
+  }
+}
+.navBarSection .active__header {
+  background: hsl(240, 1%, 48%);
+  box-shadow: 0 2px 8px 2px rgba(36, 34, 34, 0.795);
+  transition: 0.4s ease-in;
+}/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+// Variables;
+$Font__Poppins: "Poppins", sans-serif;
+$PrimaryColor: hsl(26, 93%, 50%);
+$HoverColor: hsl(26, 90%, 42%);
+$WhiteColor: hsl(0, 0%, 100%);
+$BlackColor: hsl(0, 0%, 18%);
+$textColor: hsl(240, 1%, 48%);
+$TWhiteColorDeam: hsl(0, 0%, 93%);
+$greyBg: hsl(0, 0%, 96%);
+$GreyText: rgb(190, 190, 190);
+$InputColor: hsl(330, 12%, 97%);
+
+// Mixin__SCSS
+@mixin Universal__Reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $Font__Poppins;
+  transition: 0.3s ease;
+  // scroll-behavior: smooth;
+}
+/* Universal Code */
+* {
+  @include Universal__Reset();
+}
+// Page Design And ScrollBar Design
+/* ::selection */
+::selection {
+  color: deeppink;
+  background-color: $BlackColor;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: $greyBg;
+}
+::-webkit-scrollbar-thumb {
+  background: deeppink;
+  border-radius: 10px;
+  transition: 1s;
+  &:hover {
+    background: $PrimaryColor;
+  }
+}
+//
+/* Default #{Styling} */
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.section {
+  padding: 4rem 0 2rem;
+}
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  align-items: center;
+}
+.btn {
+  padding: 0.4rem 1.5rem;
+  background: $PrimaryColor;
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.btn a {
+  color: $WhiteColor;
+  font-weight: 500;
+}
+.btn:hover a {
+  color: $WhiteColor;
+}
+.secIntro {
+  max-width: 70%;
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+.secIntro .secTitle {
+  color: $BlackColor;
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.secIntro p {
+  font-size: 13px;
+  color: $textColor;
+  font-weight: 500;
+}
+img,
+video {
+  width: 100%;
+  height: auto;
+}
+input {
+  font-size: 100%;
+}
+/*End Of Default Styling*/
+
+// Media Queries
+@media screen and (min-width: 556px) {
+  .maincontent,
+  .singlepost {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 884px) {
+  .maincontent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// @media screen and (min-width: 1240px) {
+//   .container {
+//     width: 80% !important;
+//     margin: auto !important;
+//   }
+// }

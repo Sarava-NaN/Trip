@@ -1,0 +1,126 @@
+.about {
+  margin: auto;
+  width: 100%;
+}
+.about .WhatsApp__ {
+  display: block;
+  object-fit: cover;
+  object-position: bottom;
+}
+.about .hideWhatsapp {
+  display: none;
+}
+.about .seccontainer .title {
+  text-align: center;
+  font-size: 2rem;
+  color: hsl(0, 0%, 18%);
+  font-weight: 700;
+  transform: translateY(-50px);
+}
+.about .seccontainer .maincontent {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+.about .seccontainer .maincontent .singleItem img {
+  border-radius: 50%;
+  background-color: rgb(228, 180, 180);
+  width: 120px;
+  margin-bottom: 0.5rem;
+}
+.about .seccontainer .maincontent .singleItem h3 {
+  margin-bottom: 1rem;
+}
+.about .seccontainer .maincontent .singleItem p {
+  font-size: 18px;
+  color: hsl(240, 1%, 48%);
+}
+.about .seccontainer .videocard {
+  margin-top: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.609)), url(../../Assets/map.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about .seccontainer .videocard .cardcontent {
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+.about .seccontainer .videocard .cardcontent .cardtext h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.about .seccontainer .videocard .cardcontent .cardtext p {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  opacity: 0.7;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.about .seccontainer .videocard .cardvideo {
+  border: 2px solid hsl(0, 0%, 100%);
+  height: 200px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.about .seccontainer .videocard .cardvideo video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .about .seccontainer .title {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .about .seccontainer .maincontent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about .seccontainer .maincontent .singleItem img {
+    width: 100px;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .videocard {
+    width: 80%;
+    margin: auto;
+    border-radius: 12px;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.897)), url(../../Assets/map.png);
+  }
+  .videocard .cardcontent {
+    gap: 2rem;
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .videocard .cardcontent .cardtext h2 {
+    color: hsl(0, 0%, 100%);
+    width: 300px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+  .videocard .cardcontent .cardtext p {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    opacity: 0.7;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 400px;
+  }
+  .videocard .cardvideo {
+    border: 2px solid hsl(0, 0%, 100%);
+    height: 200px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .videocard .cardvideo video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}/*# sourceMappingURL=about.css.map */

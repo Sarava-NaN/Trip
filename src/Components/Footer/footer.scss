@@ -1,0 +1,136 @@
+@use "../Home/variables" as *;
+
+.footer {
+  background: rgb(28, 10, 46);
+  color: $WhiteColor;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  nav {
+    .container__footer {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .flex__container {
+        .logo {
+          color: $PrimaryColor;
+          .icon {
+            font-size: 2rem;
+            cursor: pointer;
+          }
+          small {
+            cursor: pointer;
+            font-size: 2rem;
+            display: inline-block;
+            margin-bottom: 1.2rem;
+
+            &:hover {
+              transform: skew(-25deg);
+            }
+          }
+        }
+        .social__networks {
+          justify-content: space-evenly;
+          display: flex;
+          .icon:nth-last-of-type(3) {
+            color: navy;
+          }
+          &:nth-child(2) {
+            color: red;
+          }
+          .icon:nth-last-child(1) {
+            color: #fa7313;
+          }
+          .icon:hover {
+            color: teal;
+          }
+        }
+        .links {
+          .ul {
+            text-align: center;
+            margin-top: 1rem;
+            li {
+              text-align: start;
+              margin-bottom: 0.8rem;
+
+              &:hover {
+                cursor: pointer;
+                color: $PrimaryColor;
+                transform: translateX(10px);
+              }
+            }
+          }
+        }
+      }
+    }
+    h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      color: teal;
+    }
+    //
+    // li::after {
+    //   content: "";
+    //   min-width: fit-content;
+    //   width: 0%;
+    //   height: 4px;
+    //   display: flex;
+    //   background: teal;
+    //   transition: 0.5s ease;
+    // }
+    // li:hover::after {
+    //   width: 50%;
+    // }
+    //
+  }
+}
+// Media query
+@media screen and (min-width: 280px) and (max-width: 720px) {
+  .footer {
+    nav {
+      .container__footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        .flex__container {
+          .logo {
+            text-align: center;
+            .icon {
+              font-size: 1.5rem;
+            }
+            small {
+              font-size: 1.5rem;
+              margin-bottom: 1rem;
+            }
+          }
+          .social__networks {
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+          }
+          .links {
+            .ul {
+              text-align: center;
+              margin-top: 1rem;
+              li {
+                text-align: center;
+                margin-bottom: 0.8rem;
+                transition: 2s;
+                &:hover {
+                  cursor: pointer;
+                  color: $PrimaryColor;
+                  transform: scale(1.8);
+                }
+              }
+            }
+          }
+        }
+      }
+      //
+      // li:hover::after {
+      //   display: none;
+      // }
+      //
+    }
+  }
+}

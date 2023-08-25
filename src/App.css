@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* Universal Code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease;
+}
+
+/* ::selection */
+::selection {
+  color: deeppink;
+  background-color: hsl(0, 0%, 18%);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: hsl(0, 0%, 96%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: deeppink;
+  border-radius: 10px;
+  transition: 1s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(26, 93%, 50%);
+}
+
+/* Default Styling */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.4rem 1.5rem;
+  background: hsl(26, 93%, 50%);
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.btn a {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+
+.btn:hover a {
+  color: hsl(0, 0%, 100%);
+}
+
+.secIntro {
+  max-width: 70%;
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+
+.secIntro .secTitle {
+  color: hsl(0, 0%, 18%);
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.secIntro p {
+  font-size: 13px;
+  color: hsl(240, 1%, 48%);
+  font-weight: 500;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+input {
+  font-size: 100%;
+}
+
+/*End Of Default Styling*/
+@media screen and (min-width: 556px) {
+  .maincontent,
+  .singlepost {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 884px) {
+  .maincontent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=App.css.map */

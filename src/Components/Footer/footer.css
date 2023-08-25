@@ -1,0 +1,99 @@
+.footer {
+  background: rgb(28, 10, 46);
+  color: hsl(0, 0%, 100%);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.footer nav .container__footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer nav .container__footer .flex__container .logo {
+  color: hsl(26, 93%, 50%);
+}
+.footer nav .container__footer .flex__container .logo .icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.footer nav .container__footer .flex__container .logo small {
+  cursor: pointer;
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 1.2rem;
+}
+.footer nav .container__footer .flex__container .logo small:hover {
+  transform: skew(-25deg);
+}
+.footer nav .container__footer .flex__container .social__networks {
+  justify-content: space-evenly;
+  display: flex;
+}
+.footer nav .container__footer .flex__container .social__networks .icon:nth-last-of-type(3) {
+  color: navy;
+}
+.footer nav .container__footer .flex__container .social__networks:nth-child(2) {
+  color: red;
+}
+.footer nav .container__footer .flex__container .social__networks .icon:nth-last-child(1) {
+  color: #fa7313;
+}
+.footer nav .container__footer .flex__container .social__networks .icon:hover {
+  color: teal;
+}
+.footer nav .container__footer .flex__container .links .ul {
+  text-align: center;
+  margin-top: 1rem;
+}
+.footer nav .container__footer .flex__container .links .ul li {
+  text-align: start;
+  margin-bottom: 0.8rem;
+}
+.footer nav .container__footer .flex__container .links .ul li:hover {
+  cursor: pointer;
+  color: hsl(26, 93%, 50%);
+  transform: translateX(10px);
+}
+.footer nav h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: teal;
+}
+
+@media screen and (min-width: 280px) and (max-width: 720px) {
+  .footer nav .container__footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .footer nav .container__footer .flex__container .logo {
+    text-align: center;
+  }
+  .footer nav .container__footer .flex__container .logo .icon {
+    font-size: 1.5rem;
+  }
+  .footer nav .container__footer .flex__container .logo small {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .footer nav .container__footer .flex__container .social__networks {
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .footer nav .container__footer .flex__container .links .ul {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .footer nav .container__footer .flex__container .links .ul li {
+    text-align: center;
+    margin-bottom: 0.8rem;
+    transition: 2s;
+  }
+  .footer nav .container__footer .flex__container .links .ul li:hover {
+    cursor: pointer;
+    color: hsl(26, 93%, 50%);
+    transform: scale(1.8);
+  }
+}/*# sourceMappingURL=footer.css.map */
