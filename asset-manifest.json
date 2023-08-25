@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Trip/static/css/main.5f625fce.css",
+    "main.js": "/Trip/static/js/main.02ab1afc.js",
+    "static/media/3.jpg": "/Trip/static/media/3.6004bab9cfccd007287a.jpg",
+    "static/media/6.jpg": "/Trip/static/media/6.3cfce800c4aa7e825888.jpg",
+    "static/media/pexels-boonkong-boonpeng-1134175.jpg": "/Trip/static/media/pexels-boonkong-boonpeng-1134175.c6a480ee924a74f31365.jpg",
+    "static/media/saigon_-_14385 (1080p).mp4": "/Trip/static/media/saigon_-_14385 (1080p).c76867ccff3a578f1482.mp4",
+    "static/media/Background3.jpg": "/Trip/static/media/Background3.fad7714b34a816066c14.jpg",
+    "static/media/4.jpg": "/Trip/static/media/4.9306be095d57f0928173.jpg",
+    "static/media/pexels-amar-saleem-70441.jpg": "/Trip/static/media/pexels-amar-saleem-70441.d9fec85509baaf619271.jpg",
+    "static/media/7.jpg": "/Trip/static/media/7.22c6709c1547b7c1af61.jpg",
+    "static/media/Background4.jpg": "/Trip/static/media/Background4.d993b146018ad4bbb97a.jpg",
+    "static/media/children-4355469_1280.jpg": "/Trip/static/media/children-4355469_1280.20b7f3dd44df5b145eb2.jpg",
+    "static/media/arches-national-park-1846759_1280.jpg": "/Trip/static/media/arches-national-park-1846759_1280.f5652a72c6215bbb67ad.jpg",
+    "static/media/mountains-3771960_1280.jpg": "/Trip/static/media/mountains-3771960_1280.6b155879d729522337f5.jpg",
+    "static/media/train-1728537_1280.jpg": "/Trip/static/media/train-1728537_1280.586ff72ae826b7fd87d1.jpg",
+    "static/media/elephant-1822481_1280.jpg": "/Trip/static/media/elephant-1822481_1280.79dfc064e02658ac0022.jpg",
+    "static/media/asia-2179107_1280.jpg": "/Trip/static/media/asia-2179107_1280.cff2ec767dc72064fd46.jpg",
+    "static/media/map.png": "/Trip/static/media/map.943d1128e5b924007210.png",
+    "static/media/dp.jpg": "/Trip/static/media/dp.3d9eb6666775c8ffc05a.jpg",
+    "static/media/mountain.png": "/Trip/static/media/mountain.abbb79d795735d5024a7.png",
+    "static/media/hikings.png": "/Trip/static/media/hikings.5250e9e83f0e20d77cd9.png",
+    "static/media/care2.png": "/Trip/static/media/care2.8cb3926389555f543741.png",
+    "index.html": "/Trip/index.html",
+    "main.5f625fce.css.map": "/Trip/static/css/main.5f625fce.css.map",
+    "main.02ab1afc.js.map": "/Trip/static/js/main.02ab1afc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f625fce.css",
+    "static/js/main.02ab1afc.js"
+  ]
+}
